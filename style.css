@@ -1,37 +1,68 @@
 
 
+
 *{
   margin: auto;
   text-align:center;
   padding:10px;
-}
-
-p{
-  padding:20px;
-  font-size:150%;
+  background-color:rgb(48, 187, 165);
 }
 
 #questions {
   color:Black;
   font-weight:bold;
   font-family: serif;
-  border:7px solid silver;
+  border-radius:180px;
+  background-color: :red;
+
 }
+
+#dog {color:brown;
+  font-size:25px;
+  background-color:white;
+}
+
 #money {
   font-size:25px;
   color:orange;
+  background-color:white;
 }
 
 #police{
   font-size: 25px;
   color:blue;
+  background-color:white;
 }
 
+#french{
+  font-size:25px;
+  color:red;
+  background-color:white;
+}
+
+#mountain{
+  font-size:25px;
+  color:green;
+  background-color:white;
+}
 
 h1 {
   color: Red;
   font-size:50px;
   width:540px;
-  border:7px solid silver;
-
+  background-color:white;
+  border-radius:80px;
+  }
+h2{
+  color:red;
+  background-color: white;
+  border-radius: 40px;
+  margin:40px;
+  width:620px;
 }
+  p{
+    padding:20px;
+    font-size:150%;
+    background-color:white;
+    width:450px;
+  }
