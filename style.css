@@ -1,2 +1,30 @@
-h1 {color: red
+
+
+*{
+  margin: auto;
+}
+
+
+
+#questions {
+  color:Black;
+  font-weight:bold;
+  font-family: serif;
+  width:400px;
+}
+#money {
+  font-size:25px;
+  color:orange;
+}
+
+#police{
+  font-size: 25px;
+  color:blue;
+}
+
+
+h1 {
+  color: Red;
+  font-size:50px;
+
 }
