@@ -60,8 +60,82 @@ if(climbedK2 === 'y' || climbedK2 === 'yes') {
 }
 
 
+var i = 2; //setup for while loops
+var favorite1 = Math.floor((Math.random() * 666) + 1);
+console.log(favorite1);
 
-//guessing while they have tries remaining and while not given right answer-- if right tell them, add points- if wrong ask again/out of tries you lose
-//first you have 5 tries, then 4, then 3 then 3 forever
-//in for loops when they get it right use "break;"
-//put in a guessing game- guess my number, three strikes- make it between 1 and 333. after three strikes it resets and you have to try again but with a new number each time 'i chose a new number, that one got old'
+while(i >= 0){
+  var question6 = 'guess my favorite integer between 1 and 666. You have ';
+  var guessedNumber = prompt(question6 + i + ' tries left');
+  console.log('guessed number is ' + guessedNumber);
+  console.log('tries left ' + (i - 1));
+  i--;
+  if(guessedNumber == favorite1){
+    alert('great job, you are such a good guesser!!! ' + favorite1 + ' was my favorite number!');
+    break;
+  } else if(i == 0){
+    break;
+  }else{
+    alert('so close, guess again.');
+  }
+}
+
+if(i==0){
+  alert('you failed, but that is ok. We are going to try again; I will make it easier with 3 guesses. However, I have changed my mind about my favorite integer');
+  var favorite2 = Math.floor((Math.random() * 666) + 1);
+  console.log(favorite2);
+  var i = 3;
+  while(i >= 0){
+    var question6 = 'You are still guessing my favorite integer between 1 and 666. You have ';
+    var guessedNumber = prompt(question6 + i + ' tries left');
+    console.log('guessed number is ' + guessedNumber);
+    console.log('tries left ' + (i - 1));
+    i--;
+    if(guessedNumber == favorite2){
+      alert('great job, you turned out to be a decent guesser after all!! ' + favorite2 + ' was my favorite number!');
+      break;
+}else if(i == 0){
+  break;
+}else{
+  alert('you can do better than that!');
+}
+}
+}
+  if(i == 0){
+    alert('you failed again? Maybe you are not as awesome as they say. I will give you one more chance to redeem yourself. This time I am really handicapping you. You get 666 guesses and I have a new favorite number.');
+    var favorite3 = Math.floor((Math.random() * 666) + 1);
+    console.log(favorite3);
+    var i = 3;
+    while(i >= 0){
+      var question6 = 'Lets do this, show me your skills and guess. You have ';
+      var guessedNumber = prompt(question6 + (i + 663) + ' tries left');
+      console.log('guessed number is ' + guessedNumber);
+      console.log('tries left ' + (i + 663 - 1));
+      i--;
+      if(guessedNumber == favorite3){
+        alert('great job, you turned out to be a decent guesser after all!! ' + favorite2 + ' was my favorite number!');
+        break;
+
+      }else if(i == 0){
+        alert('this is no fun anymore, maybe you should just look at the rest of my webpage');
+        break;
+      }else{
+        alert('keep trying, You\'ll get there eventually');
+      }
+      }
+    }
+var i = 5
+while(i>=0){
+  var fA =['pizza', 'peach cobbler', 'shepherd\'s pie', 'ice cream', 'milk shake', 'caterpillar roll', 'sushi', 'salmon', 'chinese food', 'chow mein'];
+  var foodQuestion = 'I have a few favorite foods. What do you think one of them is? you have ';
+  var foodGuessRaw =prompt(foodQuestion + i + ' guesses left');
+  var foodGuess = foodGuessRaw.toLowerCase();
+  i--
+  if(fA.indexOf(foodGuess, 0) > 0){
+    alert('congrats, you guessed right. Specifically, my favorites are ' + fA[0] +', ' + fA[1] +', '+ fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] );
+    break;
+  }else if(i == 0){
+  alert('I like some of those, but I really love '+ fA[0] +', ' + fA[1] +', '+ fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] +' a lot more');
+  break;
+}
+}
