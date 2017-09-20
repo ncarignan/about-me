@@ -1,45 +1,67 @@
 'use strict';
 
 var userName = prompt('I\'m Nicholas, what is your name?');
-alert('Hi, ' + userName + ', nice to meet you');
+alert('Hi ' + userName + ', nice to meet you');
 console.log ('userName is ' + userName);
 
-var answer1 = prompt('Does Nicholas Have a dog').toLowerCase();
-console.log('answer 1 is', answer1);
-if(answer1 === 'y' || answer1 === 'yes') {
+var question1= 'Does Nicholas have a dog';
+var hasDogRaw = prompt(question1);
+var hasDog = hasDogRaw.toLowerCase();
+console.log(question1);
+console.log('answer 1 is' + hasDog);
+if(hasDog === 'y' || hasDog === 'yes') {
   alert('Correct, he actually has two dogs: a black lab and a german shepherd');
 } else{
-  alert('Incorrect, he actually has two dogs: a black lab and a german shepherd');
+  alert('Nice try, he actually has two dogs: a black lab and a german shepherd');
 }
 
-var answer2 = prompt('Is Nicholas from Washington?').toLowerCase();
-console.log('answer 2 is', answer2);
-if(answer2 === 'y' || answer2 === 'yes') {
-  alert('Incorrect, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+var question2 = 'Did Nicholas come from Washington?'
+var fromWashingtonRaw = prompt(question2);
+var fromWashington = fromWashingtonRaw.toLowerCase();
+console.log(question2);
+console.log('answer 2 is', fromWashington);
+if(fromWashington === 'y' || fromWashington === 'yes') {
+  alert('Nope, better luck next time. Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
 } else{
-  alert('Correct, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+  alert('Well done, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
 }
 
-var answer3 = prompt('Did Nicholas come from law enforcement?').toLowerCase();
-console.log('answer 3 is', answer3);
-if(answer3 === 'y' || answer3 === 'yes') {
-  alert('correct, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
+var question3 = 'Did Nicholas come from law enforcement';
+var lawEnforecementRaw = prompt(question3);
+var lawEnforecement = lawEnforecementRaw.toLowerCase();
+console.log(question3);
+console.log('answer 3 is', lawEnforecement);
+if(lawEnforecement === 'y' || lawEnforecement === 'yes') {
+  alert('Nice job, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
 } else{
   alert('Incorrect, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
 }
 
-var answer4 = prompt('Does Nicholas speak French?').toLowerCase();
-console.log('answer 4 is', answer4);
-if(answer4 === 'y' || answer4 === 'yes') {
-  alert('Incorrect, Nicholas can read and write a little Mandarin but does not know any French.');
+var question4 = 'Does Nicholas speak French?';
+var speaksFrenchRaw = prompt(question4);
+var speaksFrench = speaksFrenchRaw.toLowerCase();
+console.log(question4);
+console.log('answer 4 is', speaksFrench);
+if(speaksFrench === 'y' || speaksFrench === 'yes') {
+  alert('No way, Nicholas can read and write a little Mandarin but does not know any French.');
 } else{
-  alert('Correct, Nicholas can read and write a little Mandarin but does not know any French.');
+  alert('That\'s right, Nicholas does not know any French, but can read and write a little Mandarin');
 }
 
-var answer5 = prompt('Did Nicholas Climb K2?').toLowerCase();
-console.log('answer 5 is', answer5);
-if(answer5 === 'y' || answer5 === 'yes') {
-  alert('Incorrect, however, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+var question5 = 'Did Nicholas climb K2?'
+var climbedK2Raw = prompt(question5);
+var climbedK2 = climbedK2Raw.toLowerCase();
+console.log(question5);
+console.log('answer 5 is', climbedK2);
+if(climbedK2 === 'y' || climbedK2 === 'yes') {
+  alert('I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
 } else{
-  alert('Correct, however, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+  alert('Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
 }
+
+
+
+//guessing while they have tries remaining and while not given right answer-- if right tell them, add points- if wrong ask again/out of tries you lose
+//first you have 5 tries, then 4, then 3 then 3 forever
+//in for loops when they get it right use "break;"
+//put in a guessing game- guess my number, three strikes- make it between 1 and 333. after three strikes it resets and you have to try again but with a new number each time 'i chose a new number, that one got old'
