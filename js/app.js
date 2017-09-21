@@ -4,7 +4,7 @@ var userName = prompt('I\'m Nicholas, what is your name?');
 alert('Hi ' + userName + ', nice to meet you');
 console.log ('userName is ' + userName);
 
-var question1= 'Does Nicholas have a dog';
+var question1 = 'Does Nicholas have a dog';
 var hasDogRaw = prompt(question1);
 var hasDog = hasDogRaw.toLowerCase();
 console.log(question1);
@@ -15,7 +15,7 @@ if(hasDog === 'y' || hasDog === 'yes') {
   alert('Nice try, he actually has two dogs: a black lab and a german shepherd');
 }
 
-var question2 = 'Did Nicholas come from Washington?'
+var question2 = 'Did Nicholas come from Washington?';
 var fromWashingtonRaw = prompt(question2);
 var fromWashington = fromWashingtonRaw.toLowerCase();
 console.log(question2);
@@ -48,7 +48,7 @@ if(speaksFrench === 'y' || speaksFrench === 'yes') {
   alert('That\'s right, Nicholas does not know any French, but can read and write a little Mandarin');
 }
 
-var question5 = 'Did Nicholas climb K2?'
+var question5 = 'Did Nicholas climb K2?';
 var climbedK2Raw = prompt(question5);
 var climbedK2 = climbedK2Raw.toLowerCase();
 console.log(question5);
@@ -80,62 +80,62 @@ while(i >= 0){
   }
 }
 
-if(i==0){
+if(i == 0){
   alert('you failed, but that is ok. We are going to try again; I will make it easier with 3 guesses. However, I have changed my mind about my favorite integer');
   var favorite2 = Math.floor((Math.random() * 666) + 1);
   console.log(favorite2);
-  var i = 3;
+  i = 3;
   while(i >= 0){
-    var question6 = 'You are still guessing my favorite integer between 1 and 666. You have ';
-    var guessedNumber = prompt(question6 + i + ' tries left');
+    var question7 = 'You are still guessing my favorite integer between 1 and 666. You have ';
+    guessedNumber = prompt(question7 + i + ' tries left');
     console.log('guessed number is ' + guessedNumber);
     console.log('tries left ' + (i - 1));
     i--;
     if(guessedNumber == favorite2){
       alert('great job, you turned out to be a decent guesser after all!! ' + favorite2 + ' was my favorite number!');
       break;
-}else if(i == 0){
-  break;
-}else{
-  alert('you can do better than that!');
-}
-}
-}
-  if(i == 0){
-    alert('you failed again? Maybe you are not as awesome as they say. I will give you one more chance to redeem yourself. This time I am really handicapping you. You get 666 guesses and I have a new favorite number.');
-    var favorite3 = Math.floor((Math.random() * 666) + 1);
-    console.log(favorite3);
-    var i = 3;
-    while(i >= 0){
-      var question6 = 'Lets do this, show me your skills and guess. You have ';
-      var guessedNumber = prompt(question6 + (i + 663) + ' tries left');
-      console.log('guessed number is ' + guessedNumber);
-      console.log('tries left ' + (i + 663 - 1));
-      i--;
-      if(guessedNumber == favorite3){
-        alert('great job, you turned out to be a decent guesser after all!! ' + favorite2 + ' was my favorite number!');
-        break;
-
-      }else if(i == 0){
-        alert('this is no fun anymore, maybe you should just look at the rest of my webpage');
-        break;
-      }else{
-        alert('keep trying, You\'ll get there eventually');
-      }
-      }
+    }else if(i == 0){
+      break;
+    }else{
+      alert('you can do better than that!');
     }
-var i = 5
-while(i>=0){
-  var fA =['pizza', 'peach cobbler', 'shepherd\'s pie', 'ice cream', 'milk shake', 'caterpillar roll', 'sushi', 'salmon', 'chinese food', 'chow mein'];
+  }
+}
+if(i == 0){
+  alert('you failed again? Maybe you are not as awesome as they say. I will give you one more chance to redeem yourself. This time I am really handicapping you. You get 666 guesses and I have a new favorite number.');
+  var favorite3 = Math.floor((Math.random() * 666) + 1);
+  console.log(favorite3);
+  i = 3;
+  while(i >= 0){
+    var question8 = 'Lets do this, show me your skills and guess. You have ';
+    guessedNumber = prompt(question8 + (i + 663) + ' tries left');
+    console.log('guessed number is ' + guessedNumber);
+    console.log('tries left ' + (i + 663 - 1));
+    i--;
+    if(guessedNumber == favorite3){
+      alert('great job, you turned out to be a decent guesser after all!! ' + favorite2 + ' was my favorite number!');
+      break;
+
+    }else if(i == 0){
+      alert('this is no fun anymore, maybe you should just look at the rest of my webpage');
+      break;
+    }else{
+      alert('keep trying, You\'ll get there eventually');
+    }
+  }
+}
+i = 5;
+while(i >= 0){
+  var fA = ['pizza', 'peach cobbler', 'shepherd\'s pie', 'ice cream', 'milk shake', 'caterpillar roll', 'sushi', 'salmon', 'chinese food', 'chow mein'];
   var foodQuestion = 'I have a few favorite foods. What do you think one of them is? you have ';
-  var foodGuessRaw =prompt(foodQuestion + i + ' guesses left');
+  var foodGuessRaw = prompt(foodQuestion + i + ' guesses left');
   var foodGuess = foodGuessRaw.toLowerCase();
-  i--
+  i--;
   if(fA.indexOf(foodGuess, 0) > 0){
-    alert('congrats, you guessed right. Specifically, my favorites are ' + fA[0] +', ' + fA[1] +', '+ fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] );
+    alert('congrats, you guessed right. Specifically, my favorites are ' + fA[0] + ', ' + fA[1] + ', ' + fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] );
     break;
   }else if(i == 0){
-  alert('I like some of those, but I really love '+ fA[0] +', ' + fA[1] +', '+ fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] +' a lot more');
-  break;
-}
+    alert('I like some of those, but I really love ' + fA[0] + ', ' + fA[1] + ', ' + fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] + ' a lot more');
+    break;
+  }
 }
