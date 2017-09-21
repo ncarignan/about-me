@@ -7,7 +7,6 @@
   padding:10px;
   background-color;
   width: 100%;
-  border: 1px solid black;
   background-color: #18121e;
 }
 html{
@@ -44,15 +43,31 @@ ul{
   font-size:150%;
   border-radius: 10px;
 }
+ol{
+  list-style:none;
+  text-align: center;
+  margin: 20px auto;
+  background-color:#984b43;
+  color:#eac67a;
+  font-size:150%;
+  border-radius: 10px;
+}
 li{
   background-color:#eac67a;
   font-size:75%;
   color:#233237;
   width:97%;
-
-}
-li{
   margin: 10px auto;
+}
+a:link {
+  background-color:#eac67a;
+  color: #984b43;
+  font-style: bold;
+}
+a:visited{
+  color:#18121e;
+  background-color:#eac67a;
+
 }
 
 
