@@ -1,72 +1,113 @@
 'use strict';
 
+var yesNoQuestions = [
+  ['Does Nicholas have a dog',
+    'answer 1 is',
+    'y',
+    'yes',
+    'Correct, he actually has two dogs: a black lab and a german shepherd',
+    'Nice try, he actually has two dogs: a black lab and a german shepherd'
+  ],
+  [
+    'Did Nicholas come from Washington?',
+    'answer 2 is',
+    'y',
+    'yes',
+    'Nope, better luck next time. Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.',
+    'Well done, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.'
+  ],
+  [
+    'Did Nicholas come from law enforcement',
+    'answer 3 is',
+    'y',
+    'yes',
+    'Nice job, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.',
+    'Incorrect, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.'
+  ],
+  [
+    'Does Nicholas speak French?',
+    'answer 4 is',
+    'n',
+    'no',
+    'No way, Nicholas can read and write a little Mandarin but does not know any French.',
+    'That\'s right, Nicholas does not know any French, but can read and write a little Mandarin'
+  ]
+    [
+      'Did Nicholas climb K2?',
+      'answer 5 is',
+      'y',
+      'yes',
+      'I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.',
+      'Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.'
+    ]
+];
 var userName = prompt('I\'m Nicholas, what is your name?');
 alert('Hi ' + userName + ', nice to meet you');
 console.log ('userName is ' + userName);
 
 function dogQuestion() {
-  var question1 = 'Does Nicholas have a dog';
+  var question1 = yesNoQuestions[0][0];
   var hasDogRaw = prompt(question1);
   var hasDog = hasDogRaw.toLowerCase();
   console.log(question1);
-  console.log('answer 1 is' + hasDog);
-  if(hasDog === 'y' || hasDog === 'yes') {
-    alert('Correct, he actually has two dogs: a black lab and a german shepherd');
+  console.log(yesNoQuestions[0][1] + hasDog);
+  if(hasDog === yesNoQuestions[0][2] || hasDog === yesNoQuestions[0][3]) {
+    alert(yesNoQuestions[0][4]);
   } else{
-    alert('Nice try, he actually has two dogs: a black lab and a german shepherd');
+    alert(yesNoQuestions[0][5]);
   }
 }
 dogQuestion();
 
 function stateQuestion(){
-  var question2 = 'Did Nicholas come from Washington?';
+  var question2 = yesNoQuestions[1][0];
   var fromWashingtonRaw = prompt(question2);
   var fromWashington = fromWashingtonRaw.toLowerCase();
   console.log(question2);
-  console.log('answer 2 is', fromWashington);
-  if(fromWashington === 'y' || fromWashington === 'yes') {
-    alert('Nope, better luck next time. Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+  console.log(yesNoQuestions[1][1], fromWashington);
+  if(fromWashington === yesNoQuestions[1][2] || fromWashington === yesNoQuestions[1][3]) {
+    alert(yesNoQuestions[1][4]);
   } else{
-    alert('Well done, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+    alert(yesNoQuestions[1][5]);
   }
 }
 stateQuestion();
 function jobQuestion(){
-  var question3 = 'Did Nicholas come from law enforcement';
+  var question3 = yesNoQuestions[2][0];
   var lawEnforecementRaw = prompt(question3);
   var lawEnforecement = lawEnforecementRaw.toLowerCase();
   console.log(question3);
-  console.log('answer 3 is', lawEnforecement);
-  if(lawEnforecement === 'y' || lawEnforecement === 'yes') {
-    alert('Nice job, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
+  console.log(yesNoQuestions[2][1], lawEnforecement);
+  if(lawEnforecement === yesNoQuestions[2][2] || lawEnforecement === yesNoQuestions[2][3]) {
+    alert(yesNoQuestions[2][4]);
   } else{
-    alert('Incorrect, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
+    alert(yesNoQuestions[2][5]);
   }
 }
 jobQuestion();
 function frenchQuestion(){
-  var question4 = 'Does Nicholas speak French?';
+  var question4 = yesNoQuestions[3][0];
   var speaksFrenchRaw = prompt(question4);
   var speaksFrench = speaksFrenchRaw.toLowerCase();
   console.log(question4);
-  console.log('answer 4 is', speaksFrench);
-  if(speaksFrench === 'y' || speaksFrench === 'yes') {
-    alert('No way, Nicholas can read and write a little Mandarin but does not know any French.');
+  console.log(yesNoQuestions[3][1], speaksFrench);
+  if(speaksFrench === yesNoQuestions[3][2] || speaksFrench === yesNoQuestions[3][3]) {
+    alert(yesNoQuestions[3][4]);
   } else{
-    alert('That\'s right, Nicholas does not know any French, but can read and write a little Mandarin');
+    alert(yesNoQuestions[3][5]);
   }
 }
 frenchQuestion();
 function k2Question(){
-  var question5 = 'Did Nicholas climb K2?';
+  var question5 = yesNoQuestions[4][0];
   var climbedK2Raw = prompt(question5);
   var climbedK2 = climbedK2Raw.toLowerCase();
   console.log(question5);
-  console.log('answer 5 is', climbedK2);
-  if(climbedK2 === 'y' || climbedK2 === 'yes') {
-    alert('I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+  console.log(yesNoQuestions[4][1], climbedK2);
+  if(climbedK2 === yesNoQuestions[4][2] || climbedK2 === yesNoQuestions[4][3]) {
+    alert(yesNoQuestions[4][4]);
   } else{
-    alert('Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+    alert(yesNoQuestions[4][5]);
   }
 }
 k2Question();
