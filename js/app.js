@@ -1,6 +1,6 @@
 'use strict';
 
-var yesNoQuestions = [
+var yesNoArray = [
   ['Does Nicholas have a dog',
     'answer 1 is',
     'y',
@@ -31,86 +31,35 @@ var yesNoQuestions = [
     'no',
     'No way, Nicholas can read and write a little Mandarin but does not know any French.',
     'That\'s right, Nicholas does not know any French, but can read and write a little Mandarin'
+  ],
+  [
+    'Did Nicholas climb K2?',
+    'answer 5 is',
+    'y',
+    'yes',
+    'I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.',
+    'Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.'
   ]
-    [
-      'Did Nicholas climb K2?',
-      'answer 5 is',
-      'y',
-      'yes',
-      'I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.',
-      'Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.'
-    ]
 ];
 var userName = prompt('I\'m Nicholas, what is your name?');
 alert('Hi ' + userName + ', nice to meet you');
 console.log ('userName is ' + userName);
 
-function dogQuestion() {
-  var question1 = yesNoQuestions[0][0];
-  var hasDogRaw = prompt(question1);
-  var hasDog = hasDogRaw.toLowerCase();
-  console.log(question1);
-  console.log(yesNoQuestions[0][1] + hasDog);
-  if(hasDog === yesNoQuestions[0][2] || hasDog === yesNoQuestions[0][3]) {
-    alert(yesNoQuestions[0][4]);
-  } else{
-    alert(yesNoQuestions[0][5]);
+function yesNoQuestion(){
+  for(var j = 0; j < 5; j++){
+    var answerRaw = prompt(yesNoArray[j][0]);
+    var answer = answerRaw.toLowerCase();
+    console.log(yesNoArray[j][1] + ' ' + answer);
+    if(answer === yesNoArray[j][2] || answer === yesNoArray[j][3]) {
+      alert(yesNoArray[j][4]);
+    } else{
+      alert(yesNoArray[j][5]);
+    }
   }
 }
-dogQuestion();
+yesNoQuestion();
 
-function stateQuestion(){
-  var question2 = yesNoQuestions[1][0];
-  var fromWashingtonRaw = prompt(question2);
-  var fromWashington = fromWashingtonRaw.toLowerCase();
-  console.log(question2);
-  console.log(yesNoQuestions[1][1], fromWashington);
-  if(fromWashington === yesNoQuestions[1][2] || fromWashington === yesNoQuestions[1][3]) {
-    alert(yesNoQuestions[1][4]);
-  } else{
-    alert(yesNoQuestions[1][5]);
-  }
-}
-stateQuestion();
-function jobQuestion(){
-  var question3 = yesNoQuestions[2][0];
-  var lawEnforecementRaw = prompt(question3);
-  var lawEnforecement = lawEnforecementRaw.toLowerCase();
-  console.log(question3);
-  console.log(yesNoQuestions[2][1], lawEnforecement);
-  if(lawEnforecement === yesNoQuestions[2][2] || lawEnforecement === yesNoQuestions[2][3]) {
-    alert(yesNoQuestions[2][4]);
-  } else{
-    alert(yesNoQuestions[2][5]);
-  }
-}
-jobQuestion();
-function frenchQuestion(){
-  var question4 = yesNoQuestions[3][0];
-  var speaksFrenchRaw = prompt(question4);
-  var speaksFrench = speaksFrenchRaw.toLowerCase();
-  console.log(question4);
-  console.log(yesNoQuestions[3][1], speaksFrench);
-  if(speaksFrench === yesNoQuestions[3][2] || speaksFrench === yesNoQuestions[3][3]) {
-    alert(yesNoQuestions[3][4]);
-  } else{
-    alert(yesNoQuestions[3][5]);
-  }
-}
-frenchQuestion();
-function k2Question(){
-  var question5 = yesNoQuestions[4][0];
-  var climbedK2Raw = prompt(question5);
-  var climbedK2 = climbedK2Raw.toLowerCase();
-  console.log(question5);
-  console.log(yesNoQuestions[4][1], climbedK2);
-  if(climbedK2 === yesNoQuestions[4][2] || climbedK2 === yesNoQuestions[4][3]) {
-    alert(yesNoQuestions[4][4]);
-  } else{
-    alert(yesNoQuestions[4][5]);
-  }
-}
-k2Question();
+
 function randQuestion(){
   var i = 2; //setup for while loops
   var favorite1 = Math.floor((Math.random() * 666) + 1);
