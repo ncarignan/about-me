@@ -148,6 +148,7 @@ while(i >= 0){
   var foodGuess = foodGuessRaw.toLowerCase();
   i--;
   if(fA.indexOf(foodGuess, 0) > 0){
+    //if(fA.includes(foodGuess)){ //also same
     alert('congrats, you guessed right. Specifically, my favorites are ' + fA.join(', ') + '.');
     break;
   }else if(i == 0){
