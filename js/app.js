@@ -1,63 +1,63 @@
 'use strict';
-//
-// var userName = prompt('I\'m Nicholas, what is your name?');
-// alert('Hi ' + userName + ', nice to meet you');
-// console.log ('userName is ' + userName);
-//
-// var question1 = 'Does Nicholas have a dog';
-// var hasDogRaw = prompt(question1);
-// var hasDog = hasDogRaw.toLowerCase();
-// console.log(question1);
-// console.log('answer 1 is' + hasDog);
-// if(hasDog === 'y' || hasDog === 'yes') {
-//   alert('Correct, he actually has two dogs: a black lab and a german shepherd');
-// } else{
-//   alert('Nice try, he actually has two dogs: a black lab and a german shepherd');
-// }
-//
-// var question2 = 'Did Nicholas come from Washington?';
-// var fromWashingtonRaw = prompt(question2);
-// var fromWashington = fromWashingtonRaw.toLowerCase();
-// console.log(question2);
-// console.log('answer 2 is', fromWashington);
-// if(fromWashington === 'y' || fromWashington === 'yes') {
-//   alert('Nope, better luck next time. Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
-// } else{
-//   alert('Well done, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
-// }
-//
-// var question3 = 'Did Nicholas come from law enforcement';
-// var lawEnforecementRaw = prompt(question3);
-// var lawEnforecement = lawEnforecementRaw.toLowerCase();
-// console.log(question3);
-// console.log('answer 3 is', lawEnforecement);
-// if(lawEnforecement === 'y' || lawEnforecement === 'yes') {
-//   alert('Nice job, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
-// } else{
-//   alert('Incorrect, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
-// }
-//
-// var question4 = 'Does Nicholas speak French?';
-// var speaksFrenchRaw = prompt(question4);
-// var speaksFrench = speaksFrenchRaw.toLowerCase();
-// console.log(question4);
-// console.log('answer 4 is', speaksFrench);
-// if(speaksFrench === 'y' || speaksFrench === 'yes') {
-//   alert('No way, Nicholas can read and write a little Mandarin but does not know any French.');
-// } else{
-//   alert('That\'s right, Nicholas does not know any French, but can read and write a little Mandarin');
-// }
-//
-// var question5 = 'Did Nicholas climb K2?';
-// var climbedK2Raw = prompt(question5);
-// var climbedK2 = climbedK2Raw.toLowerCase();
-// console.log(question5);
-// console.log('answer 5 is', climbedK2);
-// if(climbedK2 === 'y' || climbedK2 === 'yes') {
-//   alert('I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
-// } else{
-//   alert('Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
-// }
+
+var userName = prompt('I\'m Nicholas, what is your name?');
+alert('Hi ' + userName + ', nice to meet you');
+console.log ('userName is ' + userName);
+
+var question1 = 'Does Nicholas have a dog';
+var hasDogRaw = prompt(question1);
+var hasDog = hasDogRaw.toLowerCase();
+console.log(question1);
+console.log('answer 1 is' + hasDog);
+if(hasDog === 'y' || hasDog === 'yes') {
+  alert('Correct, he actually has two dogs: a black lab and a german shepherd');
+} else{
+  alert('Nice try, he actually has two dogs: a black lab and a german shepherd');
+}
+
+var question2 = 'Did Nicholas come from Washington?';
+var fromWashingtonRaw = prompt(question2);
+var fromWashington = fromWashingtonRaw.toLowerCase();
+console.log(question2);
+console.log('answer 2 is', fromWashington);
+if(fromWashington === 'y' || fromWashington === 'yes') {
+  alert('Nope, better luck next time. Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+} else{
+  alert('Well done, Nicholas grew up in California and moved to the mountains of Idaho, he only just moved to Seattle.');
+}
+
+var question3 = 'Did Nicholas come from law enforcement';
+var lawEnforecementRaw = prompt(question3);
+var lawEnforecement = lawEnforecementRaw.toLowerCase();
+console.log(question3);
+console.log('answer 3 is', lawEnforecement);
+if(lawEnforecement === 'y' || lawEnforecement === 'yes') {
+  alert('Nice job, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
+} else{
+  alert('Incorrect, Nicholas was a 911 disparcher for almost 3 years, he propably has some interesting stories.');
+}
+
+var question4 = 'Does Nicholas speak French?';
+var speaksFrenchRaw = prompt(question4);
+var speaksFrench = speaksFrenchRaw.toLowerCase();
+console.log(question4);
+console.log('answer 4 is', speaksFrench);
+if(speaksFrench === 'y' || speaksFrench === 'yes') {
+  alert('No way, Nicholas can read and write a little Mandarin but does not know any French.');
+} else{
+  alert('That\'s right, Nicholas does not know any French, but can read and write a little Mandarin');
+}
+
+var question5 = 'Did Nicholas climb K2?';
+var climbedK2Raw = prompt(question5);
+var climbedK2 = climbedK2Raw.toLowerCase();
+console.log(question5);
+console.log('answer 5 is', climbedK2);
+if(climbedK2 === 'y' || climbedK2 === 'yes') {
+  alert('I wish! However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+} else{
+  alert('Unfortunately, you are right. However, Nicholas has climbed almost two dozen notable mountains in the United States. Both with the Boy Scouts and his family, Nicholas loves to conquer peaks.');
+}
 
 
 var i = 2; //setup for while loops
@@ -148,10 +148,10 @@ while(i >= 0){
   var foodGuess = foodGuessRaw.toLowerCase();
   i--;
   if(fA.indexOf(foodGuess, 0) > 0){
-    alert('congrats, you guessed right. Specifically, my favorites are ' + fA[0] + ', ' + fA[1] + ', ' + fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] );
+    alert('congrats, you guessed right. Specifically, my favorites are ' + fA.join(', ') + '.');
     break;
   }else if(i == 0){
-    alert('I like some of those, but I really love ' + fA[0] + ', ' + fA[1] + ', ' + fA[2] + ', ' + fA[3] + ', ' + fA[4] + ', ' + fA[5] + ', ' + fA[6] + ', ' + fA[7] + ', and ' + fA[8] + ' a lot more');
+    alert('I like some of those, but I really love ' + fA.join(', ') + ' a lot more');
     break;
   }
 }
